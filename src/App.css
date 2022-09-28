@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+.container {
+  border: 1px solid black;
+  font-size: 0.9em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  border: 1px solid black;
+  display: flex;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-bar {
+  border: 1px solid black;
+  width: 50%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.section2 {
+  border: 1px solid black;
+}
+.today-details {
+  display: flex;
+  flex-direction: column;
+}
+.today-activities {
+  display: flex;
+  flex-wrap: wrap;
+}
+.total-appointments {
+  width: 40%;
+  border: 1px solid black;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0.5em;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.total-appointments img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  margin-right: 1em;
+}
+.total-appointments p {
+  margin-top: -1.5em;
+}
+.today-details__chart {
+  border: 1px solid black;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart-graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart-graph img {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+.hosiptal-activity__chart {
+  border: 1px solid black;
+}
+.hosiptal-activity__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hosiptal-activity__details {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.hosiptal-activity__chart img {
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.appointment-activity__header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.appointment-card {
+  border: 1px solid black;
+  font-size: 0.7em;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spendings {
+  border-style: 1px solid black;
+  display: flex;
+}
+.section3-doctors {
+  border: 1px solid black;
+}
+.doctors,
+.section3-doctors__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.doctors img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 0.5em;
+}
+.section3-calender img {
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-color: black;
 }
